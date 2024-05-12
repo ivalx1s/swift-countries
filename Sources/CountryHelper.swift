@@ -9,27 +9,21 @@ public class CountryHelper {
         countries.first { $0.countryCode == countryCode }
     }
 
-//    static func getCountry(by phone: PhoneNumber?) -> Country? {
-//        guard let iso = phone?.e164.iso else {
-//            return nil
-//        }
-//        return self.getCountry(Country.Iso(rawValue: iso))
-//    }
+    public static func getCountry(iso2: String?) -> Country? {
+        guard let iso2, !iso2.isEmpty
+        else { return nil }
 
-    public static func getCountry(iso: String?) -> Country? {
-        guard
-                let iso = iso,
-                !iso.isEmpty
-                else {
-            return nil
-        }
+        return countries.first { $0.iso2 == iso2.uppercased() }
+    }
 
-        return countries.first { $0.iso == iso.uppercased() }
+    public static func getCountry(iso3: String?) -> Country? {
+        guard let iso3, !iso3.isEmpty
+        else { return nil }
+
+        return countries.first { $0.iso3 == iso3.uppercased() }
     }
 
     public static var countries: [Country] {
-        get {
-            CountriesResource.countries
-        }
+        get { CountriesResource.countries }
     }
 }
