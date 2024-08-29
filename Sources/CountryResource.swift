@@ -1592,11 +1592,68 @@ public struct CountriesResource {
 					phoneCode: 260,
 					name: "Zambia"
 			),
-			Country(
-					iso2: "ZW",
-					iso3: "ZWE",
-					countryCode: 716,
-					phoneCode: 263,
-					name: "Zimbabwe")
+            Country(
+                    iso2: "ZW",
+                    iso3: "ZWE",
+                    countryCode: 716,
+                    phoneCode: 263,
+                    name: "Zimbabwe"
+            ),
+            Country(
+                    iso2: "JE",
+                    iso3: "JEY",
+                    countryCode: 832,
+                    phoneCode: 44,
+                    name: "Jersey"
+            ),
+            Country(
+                    iso2: "GG",
+                    iso3: "GGY",
+                    countryCode: 831,
+                    phoneCode: 44,
+                    name: "Guernsey"
+            ),
+            Country(
+                    iso2: "IM",
+                    iso3: "IMN",
+                    countryCode: 833,
+                    phoneCode: 44,
+                    name: "Isle of Man"
+            ),
+            Country(
+                    iso2: "PS",
+                    iso3: "PSE",
+                    countryCode: 275,
+                    phoneCode: 970,
+                    name: "Palestine, State of"
+            ),
+            Country(
+                    iso2: "MF",
+                    iso3: "MAF",
+                    countryCode: 663,
+                    phoneCode: 590,
+                    name: "Saint Martin (French part)"
+            ),
+            Country(
+                iso2: "SK",
+                    iso3: "SVK",
+                    countryCode: 703,
+                    phoneCode: 421,
+                    name: "Slovakia"
+            ),
+            Country(
+                iso2: "TL",
+                    iso3: "TLS",
+                    countryCode: 626,
+                    phoneCode: 670,
+                    name: "Timor-Leste"
+            ),
+            Country(
+                iso2: "SS",
+                    iso3: "SSD",
+                    countryCode: 728,
+                    phoneCode: 211,
+                    name: "South Sudan"
+            ),
 		]
 }
