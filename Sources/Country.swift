@@ -31,14 +31,18 @@ public struct Country: Equatable, Hashable, Codable  {
 
 public extension Country {
     var localizedName: String {
-        let locale = NSLocale.current as NSLocale
-        return localizedName(for: locale)
+        return localizedName()
     }
 
-    func localizedName(for locale: NSLocale) -> String {
+    func localizedName(defaultValue: String = "") -> String {
+        let locale = NSLocale.current as NSLocale
+        return localizedName(for: locale, defaultValue: defaultValue)
+    }
+
+    func localizedName(for locale: NSLocale, defaultValue: String = "") -> String {
         let name = locale.displayName(forKey: .countryCode, value: iso2)
 
-        return name ?? ""
+        return name ?? defaultValue
     }
 
     var emoji: String {
