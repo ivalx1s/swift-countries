@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Country: Equatable, Hashable, Codable  {
+public struct Country: Equatable, Hashable, Codable, Sendable {
     public typealias ISO2 = String
     public typealias ISO3 = String
 

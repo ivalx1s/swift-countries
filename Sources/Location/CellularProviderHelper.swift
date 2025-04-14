@@ -3,6 +3,7 @@ import CoreTelephony
 internal let useCoreTelephony = true
 
 public struct CellularNetworkHelper {
+    nonisolated(unsafe)
     private static let networkInfo = CTTelephonyNetworkInfo()
 
     public static func getCurrentProviderInfo() -> CellularNetworkInfo? {
